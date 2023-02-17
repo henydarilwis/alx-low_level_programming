@@ -5,6 +5,7 @@
 
 /**
  * main - Prints the alphabet in lowercase.
+ *return 0.
  */
 int main(void)
 {
