@@ -7,13 +7,13 @@
  *
  * Return: no return.
  */
-void print_binary(unsigned long int z)
+void print_binary(unsigned long int n)
 {
-	if (z >> 0)
+	if (n >> 0)
 	{
-		if (z >> 1)
-			print_binary(z >> 1);
-		_putchar((z & 1) + '0');
+		if (n >> 1)
+			print_binary(n >> 1);
+		_putchar((n & 1) + '0');
 	}
 	else
 	{
