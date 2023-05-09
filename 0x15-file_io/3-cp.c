@@ -3,10 +3,10 @@
 
 /**
  * error_file - checks if files can be opened
- * @file_from: file_from
- * @file_to: file_to
- * @argv: arguments vector
- * Return: no return
+ * @file_from: file_from.
+ * @file_to: file_to.
+ * @argv: arguments vector.
+ * Return: no return.
  */
 void error_file(int file_from, int file_to, char *argv[])
 {
@@ -23,15 +23,15 @@ void error_file(int file_from, int file_to, char *argv[])
 }
 
 /**
- * main - check the code for School students
- * @argc: number of arguments
- * @argv: arguments vector
+ * main - check the code for School students.
+ * @argc: number of arguments.
+ * @argv: arguments vector.
  * Return: Always 0.
  */
 int main(int argc, char *argv[])
 {
 	int file_from, file_to, err_close;
-	ssize_t nchars, nw;
+	ssize_t nchars, nwr;
 	char buf[1024];
 
 	if (argc != 3)
@@ -51,7 +51,7 @@ int main(int argc, char *argv[])
 		if (nchars == -1)
 			error_file(-1, 0, argv);
 		nwr = write(file_to, buf, nchars);
-		if (nw == -1)
+		if (nwr == -1)
 			error_file(0, -1, argv);
 	}
 
